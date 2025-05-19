@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "name": "@data.pub/hono-zcap",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "types": "./index.ts",
+      "default": "./lib/index.js"
+    }
+  },
+  "scripts": {
+    "test": "glob -c 'node --import tsx --test' '*.test.*'",
+    "tsc": "tsc --build",
+    "prepare": "npm run tsc"
+  },
+  "dependencies": {
+    "dzcap": "github:gobengo/dzcap",
+    "hono": "^4.6.9"
+  },
+  "devDependencies": {
+    "@types/node": "^22.12.0",
+    "glob": "^11.0.2"
+  }
+}
