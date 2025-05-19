@@ -45,7 +45,7 @@ export async function getInvocationFromSearchParams(searchParams: URLSearchParam
 
 export function createZcapMiddleware(options: {
   expectedTarget?: string,
-  expectedAction?: string
+  expectedAction: string,
   expectedRootCapability?: string | IZcapCapability[]
   documentLoader?: IDocumentLoader
   onVerificationError?: (error: unknown) => void
@@ -122,7 +122,7 @@ export function createZcapMiddleware(options: {
       const verification = await InvocationJsonVerification.from(invocation, {
         documentLoader,
         allowTargetAttenuation: true,
-        expectedAction: 'GET',
+        expectedAction: options.expectedAction,
         expectedTarget: [invocationTarget],
         expectedRootCapability: `urn:zcap:root:${encodeURIComponent(invocationTarget)}`
       })

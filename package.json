@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@data.pub/hono-zcap",
+  "name": "hono-zcap",
   "type": "module",
   "version": "1.0.0",
   "main": "lib/index.js",
