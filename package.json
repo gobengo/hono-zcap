@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "dzcap": "github:gobengo/dzcap",
-    "hono": "^4.6.9"
+    "hono": "^4.7.10"
   },
   "devDependencies": {
     "@types/node": "^22.12.0",
