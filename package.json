@@ -16,7 +16,7 @@
     "prepare": "npm run tsc"
   },
   "dependencies": {
-    "dzcap": "github:gobengo/dzcap",
+    "dzcap": "^1.0.1",
     "hono": "^4.7.10"
   },
   "devDependencies": {
